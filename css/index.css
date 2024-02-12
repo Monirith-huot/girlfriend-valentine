@@ -1,0 +1,97 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+.container {
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.text {
+  color: pink;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.25rem; /* Equivalent to 20px if the root font size is 16px */
+}
+.s-text {
+  color: pink;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 0.75rem; /* Equivalent to 20px if the root font size is 16px */
+}
+.div-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers its children horizontally */
+  justify-content: center; /* This centers its children vertically, if needed */
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem; /* 24px */
+  padding-top: 1rem; /* 16px */
+  padding-bottom: 1rem; /* 16px */
+}
+.img {
+  max-width: 100%; /* Ensures the image is no wider than its container */
+  display: block; /* Replace flex display with block for direct img styling */
+  margin: 0 auto; /* Center the image horizontally if it's a block element */
+  margin-bottom: 1.25rem; /* Equivalent to my-5 in Tailwind */
+}
+#show {
+  height: 50px; /* Increase the height */
+  width: 50px; /* Increase the width */
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove the border */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  font-size: 120px; /* Adjust the font size as needed */
+}
+.dialog {
+  background-color: pink;
+  padding: 24px; /* Add some padding for aesthetics */
+  border-radius: 8px; /* Optional: for rounded corners */
+  width: 500px;
+}
+
+.dialog-content {
+  /* New style for the inner container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.btn {
+  background-color: pink;
+  width: 100%; /* Make button fill the width of its container */
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  margin-bottom: 1.25rem; /* Equivalent to my-5 in Tailwind */
+}
+
+dialog[open] {
+  -webkit-animation: show 1s ease normal;
+}
+@-webkit-keyframes show {
+  from {
+    transform: translateY(-110%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%; /* Ensure it takes the full width of its parent */
+  text-align: right; /* This aligns the text to the right */
+}
