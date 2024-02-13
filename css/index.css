@@ -58,6 +58,8 @@ body {
   padding: 24px; /* Add some padding for aesthetics */
   border-radius: 8px; /* Optional: for rounded corners */
   width: 500px;
+  height: 300px;
+  overflow: auto; /* Add scroll if content overflows */
 }
 
 .dialog-content {
