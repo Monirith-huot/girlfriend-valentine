@@ -1,3 +1,8 @@
+html, body {
+  overflow: hidden; /* Prevents scrolling on the page */
+  height: 100%; /* Sets the height of the page to the viewport height */
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
   display: flex;
@@ -63,7 +68,7 @@ body {
   background-color: pink;
   padding: 24px;
   border-radius: 8px;
-  width: 200px;
+  width: 250px;
   height: 200px;
   overflow: auto;
 }
